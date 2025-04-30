@@ -41,6 +41,12 @@ yearly_sales = df.groupby('Year')['Sales'].sum()
 monthly_avg = df.groupby('Month')['Sales'].mean()
 ```
 
+## Compare order time with shipping time
+```python
+df['Delay']=df['Ship Date']-df['Order Date']
+```
+
+
 ## 🔍 Key Insights
 
 - The highest annual sales occurred in **2018**.
